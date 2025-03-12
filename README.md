@@ -1,8 +1,8 @@
-![Logo](https://imgur.com/a/zbeOMYs)
+![Logo Pindorama Pets](assets/images/logo_banner.png)
 
 # Pindorama Pets
 
-Pindorama Pets é um site modelo para petshops que desenvolvido como projeto durante o período de trainee da UNECT Jr.
+Pindorama Pets é um site modelo para petshops que foi desenvolvido como projeto durante o período de trainee da UNECT Jr.
 
 # Objetivo
 
