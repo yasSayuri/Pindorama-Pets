@@ -1,0 +1,326 @@
+/* font-family:
+   Define a fonte do texto em um elemento. Exemplo: 'Arial, sans-serif' no body. */
+
+/* margin:
+   Define a margem externa de um elemento (espaço ao redor do elemento). */
+
+/* padding:
+   Define o preenchimento interno de um elemento (espaço entre o conteúdo e a borda do elemento). */
+
+/* background-color:
+   Define a cor de fundo de um elemento, como no body ou em seções específicas. */
+
+/* display:
+   Controla o layout de um elemento. Exemplos incluem 'flex' para usar o modelo de layout Flexbox. */
+
+/* justify-content:
+   Alinha os itens dentro de um container flexível ao longo do eixo principal (horizontal). Exemplos: 'space-between' para espaçar os itens igualmente. */
+
+/* align-items:
+   Alinha os itens dentro de um container flexível ao longo do eixo transversal (vertical). */
+
+/* text-align:
+   Alinha o texto dentro de um elemento. Exemplos: 'center' para centralizar e 'left' para alinhar à esquerda. */
+
+/* font-size:
+   Define o tamanho da fonte para o texto dentro de um elemento. */
+
+/* font-weight:
+   Define o peso da fonte (espessura). Exemplos: 'bold' para negrito. */
+
+/* border-radius:
+   Define as bordas arredondadas de um elemento. Exemplos: '8px' para bordas levemente arredondadas. */
+
+/* box-shadow:
+   Aplica uma sombra ao redor de um elemento. Exemplo: '0 4px 8px rgba(0, 0, 0, 0.2)' para uma sombra suave. */
+
+/* z-index:
+   Define a ordem de empilhamento de um elemento em relação aos outros elementos na página. Elementos com maior valor de z-index ficam sobre os de valor menor. */
+
+/* width:
+   Define a largura de um elemento. Pode ser um valor fixo ou uma porcentagem da largura do seu container. */
+
+/* height:
+   Define a altura de um elemento. Pode ser um valor fixo ou ajustado automaticamente. */
+
+/* max-width:
+   Define a largura máxima de um elemento. Ele não pode exceder este valor, mas pode ser menor. */
+
+/* margin-left, margin-right, margin-top, margin-bottom:
+   Define a margem em lados específicos do elemento. Pode ser usada para ajustar o espaçamento entre elementos. */
+
+/* flex-direction:
+   Define a direção dos itens em um container flexível. Exemplos: 'row' para linha, 'column' para coluna. */
+
+/* flex-grow:
+   Controla como os itens de um container flexível se expandem para ocupar o espaço disponível. */
+
+/* position:
+   Define como um elemento é posicionado na página. Exemplos: 'relative' para um posicionamento relativo, e 'absolute' para um posicionamento absoluto. */
+
+/* cursor:
+   Define o estilo do cursor ao passar o mouse sobre um elemento. Exemplo: 'pointer' para um cursor em forma de mãozinha (usado para links). */
+
+/* hover:
+   Define o estilo de um elemento quando o mouse passa sobre ele. Pode alterar a cor de fundo, cor do texto, etc. */
+
+/* background-image:
+   Define uma imagem de fundo para um elemento. Pode ser uma URL de uma imagem. */
+
+/* background-size:
+   Controla o tamanho da imagem de fundo. Exemplos: 'cover' para cobrir o elemento inteiro e 'contain' para ajustar a imagem dentro do elemento. */
+
+/* background-position:
+   Controla o posicionamento da imagem de fundo dentro de um elemento. Exemplo: 'center' para centralizar. */
+
+/* line-height:
+   Define o espaçamento entre as linhas de texto em um elemento. */
+
+/* color:
+   Define a cor do texto dentro de um elemento. */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E3F2FD;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.logo img {
+    width: 300px;
+    margin-left: 355px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 375px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #063643;
+    font-size: 24px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+    color: #333;
+}
+
+.hero-container {
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 90%;
+    position: relative; 
+    z-index: 2; 
+}
+
+.hero-text {
+    max-width: 550px;
+    text-align: left;
+    color: #063643;
+    position: relative; 
+    z-index: 3; 
+    margin-top: -30px; 
+}
+
+.hero-text h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hero-text button {
+    background-color: #0F637A;
+    color: white;
+    border: none;
+    padding: 17px 20px;
+    font-size: 28px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.hero-text button:hover {
+    background-color: #0c4d5f;
+}
+
+.hero-container img {
+    width: 650px;
+    margin-top: 40px;
+}
+
+.hero-campanha {
+    background-color: #63B3C9;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 990px;
+    border-radius: 8px;
+    margin-top: 30px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    position: relative;
+}
+
+.hero-campanha-text {
+    flex-grow: 1; 
+    text-align: center;
+    
+}
+
+.hero-campanha h2 {
+    font-size: 28px;
+    margin: 0;
+    color: #063643;
+}
+
+.hero-campanha p {
+    font-size: 20px;
+    margin: 5px 0;
+    color: #0F637A;
+}
+
+.hero-campanha button {
+    background-color: #ffffff;
+    color: #063643;
+    border: none;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-weight: bold; 
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.hero-campanha button:hover {
+    background-color: #083E58;
+    color: #fff;
+}
+
+.campanha-img-esquerda {
+    width: 270px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.campanha-img-direita {
+    width: 120px; 
+    height: auto;
+    margin-right: 50px;
+}
+
+
+.sobre {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    width: 100vw; 
+    min-height: 100hv;
+    margin-top: 50px;
+    background-color: #89C5D5; 
+    background-image: linear-gradient(rgba(137, 197, 213, 0.8), rgba(137, 197, 213, 0.8)), 
+                      url("/assets/images/fundo.png");
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+}
+
+
+.sobre img {
+    width: 300px; 
+    height: auto; 
+    margin-right: 70px;
+    margin-left: 480px;
+}
+
+.sobre-texto {
+    max-width: 600px;
+}
+
+#titulo-sobre {
+    font-size: 28px;
+    font-weight: bold;
+    color: #063643;
+    text-align: left;
+}
+
+#paragrafo-sobre {
+    font-size: 20px;
+    line-height: 1.5;
+    color:#063643;
+    text-align: left;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    width: 100vw;
+    background-color: #63B3C9;
+    position: relative;
+    text-align: center;
+}
+
+.servicos-container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+#titulo-servicos {
+    font-size: 28px;
+    font-weight: bold;
+    color: #063643;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 35px;
+}
+
+.servicos-conteudo {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#paragrafo-servicos {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 65px;
+    margin-top: 50px;
+}
+
+.servicos-conteudo img {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+
+footer {
+    background-color: #64B5F6;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
