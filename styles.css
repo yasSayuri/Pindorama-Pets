@@ -315,11 +315,101 @@ nav a {
     margin-left: 30px;
 }
 
+.servicos2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    width: 100vw;
+    background-color: #89C5D5;
+    background-image:   url("assets/images/fundo.png");
+    background-position: center; 
+    position: relative;
+    text-align: center;
+}
 
+.servicos2-container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.servicos2-conteudo {
+    display: flex;
+    flex-direction: row;
+}
+#paragrafo-servicos2 {
+    text-align: right;
+    font-size: 20px;
+    margin-right: 35px;
+    margin-top: 50px;
+}
+
+.servicos2-conteudo img {
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
 
 footer {
-    background-color: #64B5F6;
-    text-align: center;
+    background-color: #ffffff; 
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    max-width: 200px; /* Adjust as needed */
+    margin-top: -20px;
+}
+
+.footer-section {
+    flex: 1;
     padding: 10px;
-    color: #fff;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.footer-section h3 {
+    font-size: 20px; /* Match heading size */
+    color: #063643; /* Match color */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer-section a {
+    color: #063643; /* Link color */
+    text-decoration: none; /* No underline */
+    font-size: 16px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-bottom {
+    background-color: #063643; /* Dark background */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 8px 0;
 }
