@@ -277,6 +277,8 @@ nav a {
     padding: 50px 20px;
     width: 100vw;
     background-color: #63B3C9;
+    background-image:   url("assets/images/fundo.png");
+    background-position: center; 
     position: relative;
     text-align: center;
 }
