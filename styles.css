@@ -438,3 +438,55 @@ footer {
     justify-content: space-around;
     gap: 40px;
 }
+
+.avaliacao {
+    padding: 30px 20px;
+}
+
+.avaliacao-container {
+    width: 1180px;
+    margin: auto;
+}
+#avaliacao-topico {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+.avaliacao-clientes {
+    display: flex;
+    flex-direction: column;
+}
+.avaliacao1,.avaliacao2, .avaliacao3 {
+    display: flex;
+    padding: 30px 0;
+}
+
+.avaliacao1 > img, .avaliacao2 > img, .avaliacao3 > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+.cliente1, .cliente2, .cliente3 {
+    display: flex;
+    flex-direction: column;
+}
+.cliente1 > img, .cliente2 > img, .cliente3 > img {
+    padding: 0px 10px;
+    width: 130px;
+    height: 20px;
+}
+
+.cliente1 h2, .cliente2 h2, .cliente3 h2 {  
+    text-align: left;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.cliente1 p, .cliente2 p, .cliente3 p {
+    text-align: left;
+    font-size: 18px;
+    margin: 10px;
+    margin-top: -5px;
+}
