@@ -107,6 +107,7 @@ nav ul {
 }
 
 nav a {
+    font-family: 'Poppins';
     text-decoration: none;
     color: #063643;
     font-size: 24px;
@@ -145,11 +146,13 @@ nav a {
 }
 
 .hero-text h1 {
+    font-family: 'Poppins';
     font-size: 28px;
     font-weight: bold;
 }
 
 .hero-text button {
+    font-family: 'Poppins';
     background-color: #0F637A;
     color: white;
     border: none;
@@ -187,19 +190,20 @@ nav a {
 .hero-campanha-text {
     flex-grow: 1; 
     text-align: center;
-    
 }
 
 .hero-campanha h2 {
     font-size: 28px;
     margin: 0;
     color: #063643;
+    font-family: 'Poppins';
 }
 
 .hero-campanha p {
     font-size: 20px;
     margin: 5px 0;
     color: #0F637A;
+    font-family: 'Poppins';
 }
 
 .hero-campanha button {
@@ -212,6 +216,7 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 40px;
+    font-family: 'Poppins';
 }
 
 .hero-campanha button:hover {
@@ -257,6 +262,7 @@ nav a {
 }
 
 #titulo-sobre {
+    font-family: 'Poppins';
     font-size: 28px;
     font-weight: bold;
     color: #063643;
@@ -264,6 +270,7 @@ nav a {
 }
 
 #paragrafo-sobre {
+    font-family: 'Open Sans';
     font-size: 20px;
     line-height: 1.5;
     color:#063643;
@@ -289,6 +296,7 @@ nav a {
 }
 
 #titulo-servicos {
+    font-family: 'Inter';
     font-size: 28px;
     font-weight: bold;
     color: #063643;
@@ -303,6 +311,7 @@ nav a {
     flex-direction: row-reverse;
 }
 #paragrafo-servicos {
+    font-family: 'Open Sans';
     text-align: left;
     font-size: 20px;
     margin-left: 65px;
@@ -338,6 +347,7 @@ nav a {
     flex-direction: row;
 }
 #paragrafo-servicos2 {
+    font-family: 'Open Sans';
     text-align: right;
     font-size: 20px;
     margin-right: 35px;
@@ -353,6 +363,7 @@ nav a {
 footer {
     background-color: #ffffff; 
     padding: 20px 0;
+    font-family: 'Poppins';
 }
 
 .footer-container {
@@ -425,6 +436,7 @@ footer {
 }
 
 .profissionais h2{
+    font-family: 'Poppins';
     font-size: 24px;
     text-align: left;
     font-weight: bold;
@@ -448,6 +460,7 @@ footer {
     margin: auto;
 }
 #avaliacao-topico {
+    font-family: 'Inter';
     text-align: left;
     font-size: 24px;
     font-weight: bold;
@@ -479,12 +492,14 @@ footer {
 }
 
 .cliente1 h2, .cliente2 h2, .cliente3 h2 {  
+    font-family: 'Open Sans';
     text-align: left;
     font-size: 20px;
     margin: 10px;
 }
 
 .cliente1 p, .cliente2 p, .cliente3 p {
+    font-family: 'Open Sans';
     text-align: left;
     font-size: 18px;
     margin: 10px;
@@ -511,6 +526,7 @@ footer {
 }
 
 .formulario h2 {
+    font-family: 'Inter';
     width: 100%;
     padding-left: 320px;
     text-align: left;
@@ -525,6 +541,7 @@ footer {
 }
 
 .localizacao h3 {
+    font-family: 'Inter';
     font-size: 20px;
     font-weight: bold;
     text-align: left;
@@ -534,6 +551,7 @@ footer {
 }
 
 .localizacao p {
+    font-family: 'Inter';
     color: #063643;
     font-size: 20px;
     font-style: italic;
@@ -564,6 +582,7 @@ footer {
     margin-right: 10px; /* Espaçamento entre o ícone e o texto */
 }
 .contato p{
+    font-family: 'Open Sans';
     z-index: 0;
     margin: 10px;
     margin-left: 0;
@@ -590,6 +609,7 @@ footer {
 }
 
 label {
+    font-family: 'Inter';
     display: flex;
     font-size: 20px;
     font-weight: bold;
@@ -614,6 +634,7 @@ label {
 }
 
 .formulario-contato button {
+    font-family: 'Poppins';
     background: #0F637A;
     color: #fff;
     padding: 18px;
