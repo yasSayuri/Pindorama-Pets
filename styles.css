@@ -490,3 +490,142 @@ footer {
     margin: 10px;
     margin-top: -5px;
 }
+
+.formulario {
+    padding: 40px;
+    background: #E2F5FA;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    max-width: 1500px;
+    margin: auto;
+    background: white; /* Caixa branca */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 40px; /* Espaçamento interno */
+}
+
+.formulario h2 {
+    width: 100%;
+    padding-left: 320px;
+    text-align: left;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    color: #063643;
+}
+
+.localizacao {
+    width: 400px;
+    text-align: left;
+}
+
+.localizacao h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #063643;
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    margin-top: 5px;
+}
+
+.localizacao p {
+    color: #063643;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.localizacao img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: -5px;
+    font-weight: bold;
+    color: #063643;
+    margin-top:35px;
+    margin-left: 10px;
+}
+
+.contato-item {
+    display: flex; /* Alinha ícone e texto horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.contato img {
+    width: 36px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+.contato p{
+    z-index: 0;
+    margin: 10px;
+    margin-left: 0;
+    margin-top: 6px;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contato form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 35px;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #063643;
+    margin-left: 45px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    width: 80%;
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);;
+    margin: 0 auto;
+    display: block;
+}
+
+.formulario-contato textarea {
+    height: 100px;
+}
+
+.formulario-contato button {
+    background: #0F637A;
+    color: #fff;
+    padding: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    width: 27%;
+    margin-left: 45px;
+}
+
+.formulario-contato button:hover {
+    background: #063643;
+}
