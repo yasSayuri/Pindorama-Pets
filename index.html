@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -36,19 +37,53 @@
                 </div>
                 <img src="assets/images/img.svg" alt="Imagem do banner">
             </div>
-            <section class="hero-campanha">
-                <img src="assets/images/teste.png" alt="Imagem esquerda" class="campanha-img-esquerda">
-                
-                <div class="hero-campanha-text">
-                    <h2>Campanha de vacinação</h2>
-                    <p>Nos dias 19 a 28 de novembro</p>
-                    <button>Saiba mais</button>
+
+            
+            <div class="carrossel">
+                <div class="carousel-nav">
+                    <button id="prevBtn"><i class="fas fa-chevron-left"></i></button> <!-- Seta para a esquerda -->
                 </div>
+                <div class="hero-campanha-container">
+                    <section class="hero-campanha" id="campanha1">
+                        <img src="assets/images/teste.png" alt="Imagem esquerda" class="campanha-img-esquerda">
+                        
+                        <div class="hero-campanha-text">
+                            <h2>Campanha de vacinação</h2>
+                            <p>Nos dias 19 a 28 de novembro</p>
+                            <button>Saiba mais</button>
+                        </div>
+                        <img src="assets/images/gato.png" alt="Imagem direita" class="campanha-img-direita">
+                    </section>
             
-                <img src="assets/images/gato.png" alt="Imagem direita" class="campanha-img-direita">
-            </section>
-            
-        
+                    <section class="hero-campanha2" id="campanha2"> 
+                        <div class="hero-campanha2-text">
+                            <h2>Campanha de adoção</h2>
+                            <p>Dê um lar cheio de amor a quem só quer te fazer feliz! Adote um amigo de quatro patas e transforme sua vida e a dele.</p>
+                            <button>Saiba mais</button> 
+                        </div>
+                        <img src="assets/images/cachorro.png" alt="cachorro" class="campanha2-img1">
+                        <img src="assets/images/gato2.png" alt="gato" class="campanha2-img2">
+                    </section>
+
+                    <section class="hero-campanha3" id="campanha3">
+                        <div class="hero-campanha3-text">
+                            <h2>Banho e tosa: cuidado e saúde para seu pet</h2> 
+                            <p>Nossa clínica dispõe do serviço de higiene para seu Pet permanecer limpo, cheiroso e longe de parasitas.</p>
+                            <button>Saiba mais</button>
+                        </div>
+                        <img src="assets/images/gatoTosa.png" alt="gato" class="campanha3-img1">
+                    </section>
+                </div>
+                <div class="carousel-nav">
+                    <button id="nextBtn"><i class="fas fa-chevron-right"></i></button> 
+                </div> 
+            </div>
+            <div class="carousel-dots">
+                <span class="dot" id="dot1"></span>
+                <span class="dot" id="dot2"></span>
+                <span class="dot" id="dot3"></span>
+            </div>
+                  
             <section class="sobre">
                 <img src="assets/images/logo2.png" alt="Pindorama Pets">
                 <div class="sobre-texto">
@@ -81,6 +116,7 @@
                     </div>
                 </div>
             </section>
+        
             
             <section class="equipe">
                 <div class="profissionais">
@@ -210,5 +246,6 @@
             <p>UNECT JR - TODOS OS DIREITOS RESERVADOS</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

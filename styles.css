@@ -131,7 +131,7 @@ nav a {
     align-items: center;
     justify-content: space-between;
     max-width: 1000px;
-    width: 90%;
+    width: 100%;
     position: relative; 
     z-index: 2; 
 }
@@ -172,24 +172,49 @@ nav a {
     margin-top: 40px;
 }
 
+.carrossel {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%;
+    margin-top: 20px; 
+}
+
+.hero-campanha-container{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    max-width: 990px;
+    position: relative;
+}
+
+.hero-campanha, .hero-campanha2, .hero-campanha3 {
+    display: none;
+    width: 100%;
+}
+
+.hero-campanha.active, .hero-campanha2.active, .hero-campanha3.active {
+    display: flex; /* Exibe a campanha ativa */
+}
+
+
 .hero-campanha {
     background-color: #63B3C9;
     padding: 20px;
-    text-align: center;
     width: 100%;
     max-width: 990px;
     border-radius: 8px;
     margin-top: 30px;
     z-index: 1;
-    display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: flex-start; 
     position: relative;
+    height: 250px;
 }
 
 .hero-campanha-text {
-    flex-grow: 1; 
     text-align: center;
+    margin-left: 90px;
 }
 
 .hero-campanha h2 {
@@ -204,18 +229,20 @@ nav a {
     margin: 5px 0;
     color: #0F637A;
     font-family: 'Poppins';
+    font-weight: medium;
 }
 
 .hero-campanha button {
     background-color: #ffffff;
     color: #063643;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 40px;
     font-size: 28px;
     font-weight: bold; 
     border-radius: 5px;
     cursor: pointer;
     margin-top: 40px;
+    margin-left: 40px;
     font-family: 'Poppins';
 }
 
@@ -225,16 +252,216 @@ nav a {
 }
 
 .campanha-img-esquerda {
-    width: 270px;
+    width: 290px;
     height: auto;
-    margin-left: 30px;
+    margin-left: 35px;
 }
 
 .campanha-img-direita {
-    width: 120px; 
+    position: absolute;
+    bottom: 0.1rem;
+    left: 90%;
+    transform: translateX(-50%); 
+    width: 120px;
     height: auto;
-    margin-right: 50px;
 }
+
+.hero-campanha2 {
+    background-color: #063643;
+    background-image:   url("assets/images/fundo2.png");
+    background-position: center; 
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 990px;
+    border-radius: 8px;
+    margin-top: 30px;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between; 
+    position: relative;
+    height: 250px;
+
+}
+
+.hero-campanha2-text {
+    flex-grow: 1; 
+    text-align: left;
+}
+
+.hero-campanha2 h2 {
+    font-size: 28px;
+    margin-left: 40px;
+    color: #ffffff;
+    font-family: 'Poppins';
+}
+
+.hero-campanha2 p {
+    font-size: 18px;
+    margin: 5px 0;
+    margin-left: 40px;
+    max-width: 550px;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: medium;
+}
+
+.hero-campanha2 button {
+    background-color: #ffffff;
+    color: #063643;
+    border: none;
+    padding: 10px 40px;
+    font-size: 28px;
+    font-weight: bold; 
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-family: 'Poppins';
+}
+
+.hero-campanha2 button:hover {
+    background-color: #7CCBE0;
+    color: #063643;
+}
+
+.campanha2-img1 {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: auto;
+    margin-left: 600px;
+}
+
+.campanha2-img2 {
+    position: absolute;
+    width: 150px; 
+    height: auto;
+    right: 0;
+}
+
+.hero-campanha3 {
+    background-color: #ffffff;
+    background-image:   url("assets/images/chuva.png"), url("assets/images/guardaChuva.png");
+    background-position: center right, top left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50% 100%, auto;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 990px;
+    border-radius: 8px;
+    margin-top: 30px;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between; 
+    position: relative;
+    height: 250px;
+
+}
+
+.hero-campanha3-text {
+    flex-grow: 1; 
+    text-align: left;
+}
+
+.hero-campanha3 h2 {
+    font-size: 28px;
+    margin-left: 40px;
+    color: #063643;
+    font-family: 'Poppins';
+}
+
+.hero-campanha3 p {
+    font-size: 20px;
+    font-weight: medium;
+    margin: 5px 0;
+    margin-left: 40px;
+    max-width: 550px;
+    color: #063643;
+    font-family: 'Poppins';
+}
+
+.hero-campanha3 button {
+    background-color: #063643;
+    color: #ffffff;
+    border: none;
+    padding: 10px 40px;
+    font-size: 28px;
+    font-weight: bold; 
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-family: 'Poppins';
+}
+
+.hero-campanha3 button:hover {
+    background-color: #7CCBE0;
+    color: #063643;
+}
+
+.campanha3-img1 {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: auto;
+    margin-left: 700px;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin-top: 10px; 
+}
+
+.carousel-nav button {
+    background-color: transparent;
+    color: #063643;
+    border: none;
+    padding: 10px; 
+    cursor: pointer;
+    font-size: 36px;
+    margin: 0 10px;
+    
+}
+
+.carousel-nav button:hover{
+    color: #000000;
+}
+
+.carousel-nav button#prevBtn {
+    position: absolute;
+    left: 380px; 
+
+}
+
+.carousel-nav button#nextBtn {
+    position: absolute;
+    right: 380px; 
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #63B3C9; /* Azul */
+}
+
 
 .sobre {
     display: flex;
@@ -242,7 +469,7 @@ nav a {
     padding: 1px;
     width: 100vw; 
     min-height: 100hv;
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: #89C5D5; 
     background-image:   url("assets/images/fundo.png");
     background-position: center; 
