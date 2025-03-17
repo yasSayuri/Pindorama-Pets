@@ -386,7 +386,7 @@ nav a {
     display: flex;
     align-items: center;
     padding: 1px;
-    width: 100vw; 
+    width: 100%; 
     min-height: 100hv;
     margin-top: 30px;
     background-color: #89C5D5; 
