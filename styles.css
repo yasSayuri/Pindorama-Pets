@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #E3F2FD;
+    overflow-x: hidden;
 }
 
 header {
@@ -579,6 +580,7 @@ footer {
     margin: 30px;
     max-width: 1180px;
     max-height: 460px;
+    
 }
 
 .profissionais h2{
