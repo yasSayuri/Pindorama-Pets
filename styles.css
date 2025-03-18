@@ -7,6 +7,10 @@ body {
    overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header {
     position: fixed;
     display: flex;
@@ -848,3 +852,6 @@ label {
 .formulario-contato button:hover {
     background: #063643;
 }
+
+/*RESPONSIVOS*/
+
