@@ -633,15 +633,26 @@ footer {
 .pagina-avaliacao{
     display: flex;
     align-items:center;
+    justify-content: end;
     gap: 10px;
 }
-.avaliacao-btn{
+#avaliacao-btn{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 40px;
-    height: 30px;
-    border: 0.5rem;
-    border-radius: 5px;
+    height: 30px;   
+    border-radius: 10px;
+    border-color: #063643;
+    transition: none;
+}
+
+#AvalPAG1, #AvalPAG2, #AvalPAG3 {
+    display: none; /* Oculta todas as páginas por padrão */
+}
+
+.active {
+    display: block !important; /* Mostra apenas a página ativa */
 }
 
 .cliente1, .cliente2, .cliente3 {
