@@ -19,22 +19,23 @@
 </head>
 <body>
     <header>
-        <div class="logo"> <img src="assets/images/Logo-horizontal.svg" alt="Pindorama Pets"> </div>
+        <div class="logo" id="inicio"> <a href="#hero"><img src="assets/images/Logo-horizontal.svg" alt="Pindorama Pets"> </a></div>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#QuemSomos">Sobre nós</a></li>
+                <li><a href="#EntreContato">Contato</a></li>
             </ul>
         </nav>
     </header>
+    <div class="espaco" id="hero"></div>
     <main>
         <section class="hero">
             <div class="hero-container">
                 <div class="hero-text">
                     <h1>Cuidando do Seu Pet com Profissionalismo e Carinho</h1>
-                    <button>Entre em contato</button>
+                    <button onclick="location.href='#EntreContato'">Entre em contato</button>
                 </div>
                 <img src="assets/images/img.svg" alt="Imagem do banner">
             </div>
@@ -51,7 +52,7 @@
                         <div class="hero-campanha-text">
                             <h2>Campanha de vacinação</h2>
                             <p>Nos dias 19 a 28 de novembro</p>
-                            <button>Saiba mais</button>
+                            <button onclick="location.href='#servicos'">Saiba mais</button>
                         </div>
                         <img src="assets/images/gato.png" alt="Imagem direita" class="campanha-img-direita">
                     </section>
@@ -60,7 +61,7 @@
                         <div class="hero-campanha2-text">
                             <h2>Campanha de adoção</h2>
                             <p>Dê um lar cheio de amor a quem só quer te fazer feliz! Adote um amigo de quatro patas e transforme sua vida e a dele.</p>
-                            <button>Saiba mais</button> 
+                            <button onclick="location.href='#servicos'">Saiba mais</button> 
                         </div>
                         <img src="assets/images/cachorro.png" alt="cachorro" class="campanha2-img1">
                         <img src="assets/images/gato2.png" alt="gato" class="campanha2-img2">
@@ -70,7 +71,7 @@
                         <div class="hero-campanha3-text">
                             <h2>Banho e tosa: cuidado e saúde para seu pet</h2> 
                             <p>Nossa clínica dispõe do serviço de higiene para seu Pet permanecer limpo, cheiroso e longe de parasitas.</p>
-                            <button>Saiba mais</button>
+                            <button onclick="location.href='#servicos'">Saiba mais</button>
                         </div>
                         <img src="assets/images/gatoTosa.png" alt="gato" class="campanha3-img1">
                     </section>
@@ -85,7 +86,7 @@
                 <span class="dot" id="dot3"></span>
             </div>
                   
-            <section class="sobre">
+            <section class="sobre" id="QuemSomos">
                 <img src="assets/images/logo2.png" alt="Pindorama Pets">
                 <div class="sobre-texto">
                     <h2 id="titulo-sobre">Quem somos?</h2>
@@ -234,7 +235,7 @@
             </section>
         </section>
 
-        <section class="formulario"> 
+        <section class="formulario" id="EntreContato"> 
             <h2>Entre em contato</h2>
             <div class="formulario-container">
                 <div class="localizacao">
@@ -286,7 +287,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="assets/images/logo2.png" alt="Pindorama Pets">
+                <a href="#inicio"><img src="assets/images/logo2.png" alt="Pindorama Pets"></a>
             </div>
             <div class="footer-section">
                 <h3>NOSSOS SERVIÇOS</h3>
@@ -306,11 +307,9 @@
             </div>
             <div class="footer-section contatos">
                 <h3>Nossos Contatos</h3>
-                <ul>
-                    <li><a href="#" class="contact-icon">WhatsApp</a></li>
-                    <li><a href="#" class="contact-icon">Instagram</a></li>
-                    <li><a href="#" class="contact-icon">Facebook</a></li>
-                </ul>
+                <img src="assets/images/icon-whatsapp.png" alt="WhatsApp">
+                <img src="assets/images/icon-instagram.png" alt="Instagram">
+                <img src="assets/images/icon-face.png" alt="Facebook">
             </div>
         </div>
         <div class="footer-bottom">

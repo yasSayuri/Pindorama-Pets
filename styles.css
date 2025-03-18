@@ -1,17 +1,21 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #E3F2FD;
-    overflow-x: hidden;
+   overflow-x: hidden;
 }
 
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
     background-color: #fff;
+    width: 100%;
+    z-index: 9999;
 }
 
 .logo img {
@@ -32,6 +36,11 @@ nav a {
     color: #063643;
     font-size: 24px;
 }
+
+.espaco{
+    padding: 60px;
+}
+
 
 .hero {
     display: flex;
@@ -174,7 +183,9 @@ nav a {
 .campanha-img-esquerda {
     width: 290px;
     height: auto;
-    margin-left: 35px;
+    left: 40px;
+    top: 30px;
+    position: absolute;
 }
 
 .campanha-img-direita {
@@ -250,7 +261,7 @@ nav a {
     bottom: 0;
     width: 200px;
     height: auto;
-    margin-left: 600px;
+    margin-left: 120px;
 }
 
 .campanha2-img2 {
@@ -258,6 +269,7 @@ nav a {
     width: 150px; 
     height: auto;
     right: 0;
+    top: 0;
 }
 
 .hero-campanha3 {
@@ -326,7 +338,7 @@ nav a {
     bottom: 0;
     width: 200px;
     height: auto;
-    margin-left: 700px;
+    margin-left: 200px;
 }
 
 .carousel-nav {
@@ -366,6 +378,9 @@ nav a {
 .carousel-dots {
     text-align: center;
     margin-top: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
 }
 
 .dot {
@@ -374,12 +389,11 @@ nav a {
     margin: 0 5px;
     background-color: #bbb;
     border-radius: 50%;
-    display: inline-block;
     transition: background-color 0.3s ease;
 }
 
 .dot.active {
-    background-color: #63B3C9; /* Azul */
+    background-color: #63B3C9; 
 }
 
 
@@ -387,7 +401,7 @@ nav a {
     display: flex;
     align-items: center;
     padding: 1px;
-    width: 100%; 
+    width: 110%; 
     min-height: 100hv;
     margin-top: 30px;
     background-color: #89C5D5; 
@@ -511,18 +525,19 @@ footer {
     background-color: #ffffff; 
     padding: 20px 0;
     font-family: 'Poppins';
+    width: 100vw;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .footer-logo img {
-    max-width: 200px; /* Adjust as needed */
+    max-width: 200px; 
     margin-top: -20px;
 }
 
@@ -534,8 +549,8 @@ footer {
 }
 
 .footer-section h3 {
-    font-size: 20px; /* Match heading size */
-    color: #063643; /* Match color */
+    font-size: 20px; 
+    color: #063643; 
 }
 
 .footer-section ul {
@@ -550,24 +565,26 @@ footer {
 }
 
 .footer-section a {
-    color: #063643; /* Link color */
-    text-decoration: none; /* No underline */
+    color: #063643; 
+    text-decoration: none; 
     font-size: 16px;
 }
 
 .footer-section a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
 
 .contatos {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin-top: -20px;
 }
 
 .footer-bottom {
-    background-color: #063643; /* Dark background */
-    color: white; /* White text color */
+    background-color: #063643; 
+    color: white; 
     text-align: center;
     padding: 8px 0;
 }
