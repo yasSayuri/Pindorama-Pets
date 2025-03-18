@@ -124,7 +124,7 @@ nav a {
 }
 
 .hero-campanha.active, .hero-campanha2.active, .hero-campanha3.active {
-    display: flex; /* Exibe a campanha ativa */
+    display: flex; 
 }
 
 
@@ -670,11 +670,11 @@ footer {
 }
 
 #AvalPAG1, #AvalPAG2, #AvalPAG3 {
-    display: none; /* Oculta todas as páginas por padrão */
+    display: none; 
 }
 
 .active {
-    display: block !important; /* Mostra apenas a página ativa */
+    display: block !important; 
 }
 
 .cliente1, .cliente2, .cliente3 {
@@ -717,10 +717,10 @@ footer {
     width: 1100px;
     max-width: 1500px;
     margin: auto;
-    background: white; /* Caixa branca */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    padding: 40px; /* Espaçamento interno */
+    background: white; 
+    border-radius: 8px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    padding: 40px; 
 }
 
 .formulario h2 {
@@ -744,7 +744,7 @@ footer {
     font-weight: bold;
     text-align: left;
     color: #063643;
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    margin-bottom: 10px; 
     margin-top: 5px;
 }
 
@@ -771,13 +771,13 @@ footer {
 }
 
 .contato-item {
-    display: flex; /* Alinha ícone e texto horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex; 
+    align-items: center; 
 }
 
 .contato img {
-    width: 36px; /* Tamanho do ícone */
-    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    width: 36px; 
+    margin-right: 10px; 
 }
 .contato p{
     font-family: 'Open Sans';
