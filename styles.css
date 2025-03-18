@@ -49,6 +49,7 @@ nav a {
     padding: 50px 0;
     text-align: center;
     color: #333;
+    margin-left: 65px;
 }
 
 .hero-container {
@@ -366,13 +367,13 @@ nav a {
 
 .carousel-nav button#prevBtn {
     position: absolute;
-    left: 200px; 
+    left: 220px; 
 
 }
 
 .carousel-nav button#nextBtn {
     position: absolute;
-    right: 200px; 
+    right: 160px; 
 }
 
 .carousel-dots {
@@ -415,7 +416,7 @@ nav a {
     width: 300px; 
     height: auto; 
     margin-right: 70px;
-    margin-left: 355px;
+    margin-left: 300px;
 }
 
 .sobre-texto {
@@ -597,6 +598,8 @@ footer {
     margin: 30px;
     max-width: 1180px;
     max-height: 460px;
+    display: flex;
+    margin-left: 180px;
     
 }
 
@@ -618,6 +621,7 @@ footer {
 
 .avaliacao {
     padding: 30px 20px;
+    margin-left: 125px;
 }
 
 .avaliacao-container {
@@ -662,6 +666,7 @@ footer {
     border-radius: 10px;
     border-color: #063643;
     transition: none;
+    margin-right: 100px;
 }
 
 #AvalPAG1, #AvalPAG2, #AvalPAG3 {
@@ -702,6 +707,8 @@ footer {
     background: #E2F5FA;
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
+    margin-left: 120px;
 }
 
 .formulario-container {
@@ -719,7 +726,7 @@ footer {
 .formulario h2 {
     font-family: 'Inter';
     width: 100%;
-    padding-left: 135px;
+    padding-left: 75px;
     text-align: left;
     margin-left: 0px;
     margin-bottom: 20px;
