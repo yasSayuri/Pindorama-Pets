@@ -681,7 +681,7 @@ footer {
     border-radius: 10px;
     border-color: #063643;
     transition: none;
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 #AvalPAG1, #AvalPAG2, #AvalPAG3 {
@@ -877,7 +877,7 @@ label {
         margin-left: 720px;
     }
     nav ul{
-        margin-right: 1260px;
+        margin-right: 700px;
     }
 
     .carousel-nav button#prevBtn {
