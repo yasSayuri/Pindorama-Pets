@@ -13,25 +13,28 @@ html{
 
 header {
     position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
     background-color: #fff;
     width: 100%;
+   
     z-index: 9999;
 }
 
 .logo img {
     width: 300px;
-    margin-left: 165px;
+    margin-left: 195px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 40px;
-    margin-right: 225px;
+    margin-right: 190px;
 }
 
 nav a {
@@ -39,6 +42,7 @@ nav a {
     text-decoration: none;
     color: #063643;
     font-size: 24px;
+    white-space: nowrap;
 }
 
 .espaco{
@@ -404,43 +408,50 @@ nav a {
 
 .sobre {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 1px;
-    width: 110%; 
-    min-height: 100hv;
     margin-top: 30px;
-    background-color: #89C5D5; 
+    width: 100vw;
+    background-color: #89C5D5;
     background-image:   url("assets/images/fundo.png");
     background-position: center; 
     position: relative;
+    text-align: center;
+    min-height: 400px;
 }
 
-
-.sobre img {
-    width: 300px; 
-    height: auto; 
-    margin-right: 70px;
-    margin-left: 300px;
+.sobre-container {
+    max-width: 1000px;
+    width: 100%;
 }
 
-.sobre-texto {
-    max-width: 600px;
-}
-
-#titulo-sobre {
-    font-family: 'Poppins';
+#titulo-sobre{
+    font-family: 'Inter';
     font-size: 28px;
     font-weight: bold;
     color: #063643;
     text-align: left;
+    margin-left: 65px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.sobre-conteudo {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #paragrafo-sobre {
     font-family: 'Open Sans';
-    font-size: 20px;
-    line-height: 1.5;
-    color:#063643;
     text-align: left;
+    font-size: 20px;
+    margin-left: 65px;
+    margin-top: 40px;
+}
+
+.sobre-conteudo img {
+    width: 350px;
+    margin-left: -1px;
 }
 
 .servicos {
@@ -604,6 +615,7 @@ footer {
     max-height: 460px;
     display: flex;
     margin-left: 180px;
+    padding-right: 10px;
     
 }
 
@@ -853,5 +865,41 @@ label {
     background: #063643;
 }
 
-/*RESPONSIVOS*/
+/*RESPONSIVOS
 
+
+@media screen and (max-width: 2560px){
+    .logo img{
+        margin-left: 720px;
+    }
+    nav ul{
+        margin-right: 1260px;
+    }
+
+    .carousel-nav button#prevBtn {
+        position: absolute;
+        left: 740px; 
+    
+    }
+    
+    .carousel-nav button#nextBtn {
+        position: absolute;
+        right: 680px; 
+    }
+
+    .sobre img{
+        margin-left: 780px;
+    }
+
+    .equipe{
+        margin-left: 730px;
+    }
+
+    #avaliacao-btn{
+        margin-right: 610px;
+    }
+
+    .formulario h2{
+        margin-left: 515px;
+    }
+}
