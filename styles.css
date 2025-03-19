@@ -1,10 +1,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #E3F2FD;
-   overflow-x: hidden;
+    overflow-x: hidden;
+
 }
 
 html{
@@ -37,6 +36,13 @@ nav ul {
     margin-right: 190px;
 }
 
+nav a:hover{
+    color: white; 
+    background-color: #7CCBE0; 
+    border: 5px solid #7CCBE0;
+    border-radius: 5px;
+}
+
 nav a {
     font-family: 'Poppins';
     text-decoration: none;
@@ -44,6 +50,7 @@ nav a {
     font-size: 24px;
     white-space: nowrap;
 }
+
 
 .espaco{
     padding: 60px;
@@ -411,13 +418,16 @@ nav a {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    box-sizing: border-box;
     width: 100vw;
     background-color: #89C5D5;
     background-image:   url("assets/images/fundo.png");
     background-position: center; 
     position: relative;
     text-align: center;
-    min-height: 400px;
+    min-height: 200px;
+    max-width: none;
+    overflow: hidden;
 }
 
 .sobre-container {
@@ -898,4 +908,65 @@ label {
     .formulario h2{
         margin-left: 515px;
     }
+}
+
+@media screen and (max-width: 1440px) {
+    .logo img{
+        margin-left: 150px;
+    }
+    nav ul{
+        margin-right: 320px;
+    }
+
+    .carousel-nav button#prevBtn {
+        position: absolute;
+        left: 180px; 
+    
+    }
+    
+    .carousel-nav button#nextBtn {
+        position: absolute;
+        right: 120px; 
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .logo img{
+        margin-left: 35px;
+    }
+
+    nav ul{
+        margin-right: 200px;
+    }
+    .hero-container{
+        margin-left: auto;
+    }
+
+    .carrossel{
+        margin-left: 120px;
+    }
+
+    .carousel-dots{
+        margin-left: 140px;
+    }
+
+    .carousel-nav button#prevBtn {
+        position: absolute;
+        left: 50px; 
+    
+    }
+    
+    .carousel-nav button#nextBtn {
+        position: absolute;
+        margin-right: px; 
+    }
+
+    .sobre{
+            width: 120vh;
+    }
+    .sobre-conteudo img{
+        margin-left: -120px;
+    }
+
 }
