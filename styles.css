@@ -872,7 +872,7 @@ label {
 /*RESPONSIVOS*/
 
 
-@media screen and (max-width: 2560px){
+@media screen and (min-width: 2560px){
     .logo img{
         margin-left: 720px;
     }
@@ -892,7 +892,7 @@ label {
     }
 
     #avaliacao-btn{
-        margin-right: 610px;
+        margin-right: 670px;
     }
 
     .formulario h2{
