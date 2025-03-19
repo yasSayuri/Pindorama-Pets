@@ -933,11 +933,11 @@ label {
 
 @media screen and (max-width: 1024px) {
     .logo img{
-        margin-left: 35px;
+        margin-left: 40px;
     }
 
     nav ul{
-        margin-right: 200px;
+        margin-right: 240px;
     }
     .hero-container{
         margin-left: auto;
@@ -962,11 +962,48 @@ label {
         margin-right: px; 
     }
 
-    .sobre{
+    .sobre, .servicos, .servicos2{
             width: 120vh;
     }
     .sobre-conteudo img{
         margin-left: -120px;
     }
 
+    .servicos-conteudo img{
+        margin-left: -100px;
+    }
+
+    #titulo-servicos{
+        margin-left: -80px;
+    }
+
+    .servicos2-conteudo img{
+        margin-right: 100px;
+    }
+
+    .equipe{
+        margin-left: 200px;
+        padding-bottom: 320px;
+    }
+
+    #avaliacao-btn{
+        margin-right: -100px;
+    }
+
+    .formulario-container{
+        width: 105%;
+        margin-left: 50px;
+    }
+
+    .formulario h2{
+        margin-left: -60px;
+    }
+
+    .footer {
+        max-width: 2000vw;
+    }
+/* ainda nao funciona*/
+    .footer-container{
+        width: 200vh;
+    }
 }
