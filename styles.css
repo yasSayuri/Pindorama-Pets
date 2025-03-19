@@ -869,7 +869,7 @@ label {
     background: #063643;
 }
 
-/*RESPONSIVOS
+/*RESPONSIVOS*/
 
 
 @media screen and (max-width: 2560px){
@@ -889,14 +889,6 @@ label {
     .carousel-nav button#nextBtn {
         position: absolute;
         right: 680px; 
-    }
-
-    .sobre img{
-        margin-left: 780px;
-    }
-
-    .equipe{
-        margin-left: 730px;
     }
 
     #avaliacao-btn{
