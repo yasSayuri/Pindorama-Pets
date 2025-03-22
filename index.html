@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Pindorama Pets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header class="header">
+        <div class="container1">
+            <div class="logo" id="inicio">
+                <a href="#hero">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="assets/images/Logo-horizontal.svg">
+                        <img src="assets/images/logoMobile.png" alt="Pindorama Pets">
+                    </picture>
+                </a>
+            </div>
+            <div id="menu" class="mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="mobile-nav hidden" id="mobile-nav">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#QuemSomos">Sobre nós</a></li>
+                    <li><a href="#EntreContato">Contato</a></li>
+                </ul>
+            </nav>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#QuemSomos">Sobre nós</a></li>
+                    <li><a href="#EntreContato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container2">
+            <img src="assets/images/Ellipse.png" id="ellipse" class="mobile1" aria-hidden="true">
+            <h2 class="mobile-title">
+                Cuidamos do seu animal com muito amor
+            </h2>
+            <h2 class="desktop-title">
+                Cuidando do Seu Pet com Profissionalismo e Carinho
+            </h2>
+
+            <img src="assets/images/img.svg" id="animals" alt="Animais">
+
+            <button class="button-contato">Entre em contato</button>
+        </div>
+    </section>
+
+    <section id="carrossel" class="desktop-carrossel">
+        <div class="container3">
+            <div class="carrossel">
+
+                <button id="prevBtn" class="carousel-nav prev"><i class="fas fa-chevron-left"></i></button>
+    
+                <div class="hero-campanha-container">
+                    <section class="hero-campanha active" id="campanha1">
+                        <img src="assets/images/teste.png" alt="Imagem esquerda" class="campanha-img-esquerda">
+                        <div class="hero-campanha-text">
+                            <h2>Campanha de vacinação</h2>
+                            <p>Nos dias 19 a 28 de novembro</p>
+                            <button onclick="location.href='#servicos'">Saiba mais</button>
+                        </div>
+                        <img src="assets/images/gato.png" alt="Imagem direita" class="campanha-img-direita">
+                    </section>
+    
+                    <section class="hero-campanha2" id="campanha2">
+                        <div class="hero-campanha2-text">
+                            <h2>Campanha de adoção</h2>
+                            <p>Dê um lar cheio de amor a quem só quer te fazer feliz! Adote um amigo de quatro patas e transforme sua vida e a dele.</p>
+                            <button onclick="location.href='#servicos'">Saiba mais</button>
+                        </div>
+                        <img src="assets/images/cachorro.png" alt="cachorro" class="campanha2-img1">
+                        <img src="assets/images/gato2.png" alt="gato" class="campanha2-img2">
+                    </section>
+    
+                    <section class="hero-campanha3" id="campanha3">
+                        <div class="hero-campanha3-text">
+                            <h2>Banho e tosa: cuidado e saúde para seu pet</h2>
+                            <p>Nossa clínica dispõe do serviço de higiene para seu Pet permanecer limpo, cheiroso e longe de parasitas.</p>
+                            <button onclick="location.href='#servicos'">Saiba mais</button>
+                        </div>
+                        <img src="assets/images/gatoTosa.png" alt="gato" class="campanha3-img1">
+                    </section>
+                </div>
+    
+                <button id="nextBtn" class="carousel-nav next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+    
+            <div class="carousel-dots">
+                <span class="dot" id="dot1"></span>
+                <span class="dot" id="dot2"></span>
+                <span class="dot" id="dot3"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="QuemSomos">
+        <div class="container4">
+            <div class="desktop-img-quemsomos">
+                <img src="assets/images/logo2.png" alt="Logo Pindorama Pets">
+            </div>
+
+            <div class="sobre">
+                <h2>Quem somos?</h2>
+
+                <img src="assets/images/logoMobile2.png" alt="Logo pindorama" class="mobile-logo2">
+
+                <p> Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe
+                    dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento.<span class="desktop-texto"> Cuidamos do seu animalzinho como se fosse nosso.</span>
+                </p>
+
+                <p class="mobile-texto">Cuidamos do seu animalzinho com amor!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container5">
+            <h2>Nossos serviços <span class="mobile-resto">visam o cuidado do seu pet</span></h2>
+            
+            <img src="assets/images/servicos.png" class="img-desktop" alt="medica">
+            <p>Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. <span class="desktop-resto">Contamos com uma equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes.</span></p>
+        </div>
+        <button class="button-mobile-servicos">Agende uma consulta</button>
+        <img src="assets/images/gato.png" alt="Gato" class="mobile-img">
+    </section>
+
+    <section id="servicos2" class="desktop-servicos2">
+        <div class="container6">
+            <p>Nós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em casa.</p>
+            <img src="assets/images/Medicina-Veterinaria.png" alt="Medica">
+        </div>
+    </section>
+
+    <section id="equipe">
+        <div class="container7">
+            <h2>Nossos profissionais</h2>
+            <div class="quadrante-medicos">
+                <div class="team">
+                    <img src="assets/images/carlos.png" alt="Foto de Carlos De Souza">
+                    <h3>Carlos De Souza</h3>
+                    <span>Cirurgia Veterinária</span>
+                </div>
+
+                <div class="team">
+                    <img src="assets/images/joao.png" alt="Foto de João Paulo">
+                    <h3>João Paulo</h3>
+                    <span>Dermatologia Veterinária</span>
+                </div>
+
+                <div class="team">
+                    <img src="assets/images/jose.png" alt="Foto de José da Silva">
+                    <h3>José da Silva</h3>
+                    <span>Patologia</span>
+                </div>
+
+                <div class="team">
+                    <img src="assets/images/fulano.png" alt="Foto de José Aldo">
+                    <h3>José Aldo</h3>
+                    <span>Anestesiologia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="avaliacao">
+        <div class="container8">
+            <h1>Avaliações (9)</h1>
+    
+            <div class="quadrante-avaliacao active">
+                <div class="avaliacao1">
+                    <img src="assets/images/cliente1.png" alt="CarlosAlberto">
+                    <div class="cliente1">
+                        <img src="assets/images/stars.png" alt="nota1">
+                        <h2 id="CarlosAlberto">Carlos Alberto</h2>
+                        <p id="descricao-avaliacao1">Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
+                    </div>
+                </div>
+                <div class="avaliacao2">
+                    <img src="assets/images/cliente2.png" alt="Neymar Jr">
+                    <div class="cliente2">
+                        <img src="assets/images/stars.png" alt="nota2">
+                        <h2 id="Neymar Jr">Neymar Jr</h2>
+                        <p id="descricao-avaliacao2">Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.</p>
+                    </div>
+                </div>
+                <div class="avaliacao3">
+                    <img src="assets/images/cliente3.png" alt="Josseana Silva">
+                    <div class="cliente3">
+                        <img src="assets/images/stars.png" alt="nota3">
+                        <h2 id="Josseana da Silva">Josseana da Silva</h2>
+                        <p id="descricao-avaliacao3">Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e gentileza.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="quadrante-avaliacao2">
+                <div class="avaliacao4">
+                    <img src="assets/images/cliente1.png" alt="Cliente 4">
+                    <div class="cliente4">
+                        <img src="assets/images/stars.png" alt="nota4">
+                        <h2 id="Cliente4">João Henrique</h2>
+                        <p id="descricao-avaliacao4">Atendimento de primeira, cuidam muito bem dos animais e sempre explicam tudo com clareza.</p>
+                    </div>
+                </div>
+                <div class="avaliacao5">
+                    <img src="assets/images/cliente2.png" alt="Cliente 5">
+                    <div class="cliente5">
+                        <img src="assets/images/stars.png" alt="nota5">
+                        <h2 id="Cliente5">Adamilton Jr</h2>
+                        <p id="descricao-avaliacao5">A clínica é muito bem equipada, e os profissionais são incríveis, mas o tempo de espera poderia ser menor.</p>
+                    </div>
+                </div>
+                <div class="avaliacao6">
+                    <img src="assets/images/cliente3.png" alt="Cliente 6">
+                    <div class="cliente6">
+                        <img src="assets/images/stars.png" alt="nota6">
+                        <h2 id="Cliente6">Luciana Da Silva</h2>
+                        <p id="descricao-avaliacao6">Profissionais capacitados e atenciosos, meu gato recebeu o melhor cuidado. Recomendo muito!</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="quadrante-avaliacao3">
+                <div class="avaliacao7">
+                    <img src="assets/images/cliente1.png" alt="Cliente 7">
+                    <div class="cliente7">
+                        <img src="assets/images/stars.png" alt="nota7">
+                        <h2 id="Cliente7">Matheus Brito</h2>
+                        <p id="descricao-avaliacao7">A equipe é super dedicada e o ambiente é acolhedor, perfeito para quem se importa com o bem-estar do pet.</p>
+                    </div>
+                </div>
+                <div class="avaliacao8">
+                    <img src="assets/images/cliente2.png" alt="Cliente 8">
+                    <div class="cliente8">
+                        <img src="assets/images/stars.png" alt="nota8">
+                        <h2 id="Cliente8">Luiz Jr</h2>
+                        <p id="descricao-avaliacao8">Atendimento excelente e muito atencioso! Meu pet recebeu todo o cuidado necessário e ficou ótimo.</p>
+                    </div>
+                </div>
+                <div class="avaliacao9">
+                    <img src="assets/images/cliente3.png" alt="Cliente 9">
+                    <div class="cliente9">
+                        <img src="assets/images/stars.png" alt="nota9">
+                        <h2 id="Cliente9">Clariane Da Silva</h2>
+                        <p id="descricao-avaliacao9">Fiquei satisfeita com o atendimento, mas achei os preços um pouco altos para alguns serviços.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <footer>
+                <button class="prev hidden">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+                <span id="page">1</span>
+                <button class="next">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </footer>
+        </div>
+    </section>
+
+    <section id="EntreContato">
+        <h2>Entre em contato</h2>
+        <div class="container9">
+            <form>
+                <div class="desktop-form">
+                    <h3>Localização</h3>
+
+                    <p>
+                        Rua - Fulana de tal, 9999 <br>
+                        CEP 99999-999 <br>
+                        Pindorama/SP
+                    </p>
+
+                    <img src="assets/images/mapa.png" alt="Mapa">
+
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="assets/images/icon-whatsapp.png" alt="whatsapp">
+                            </a>
+                            <span>(99) 99999-9999</span>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="assets/images/icon-instagram.png" alt="Instagram">
+                            </a>
+                            <span>@PindoramaClinica</span>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="assets/images/icon-face.png" alt="Facebook">
+                            </a>
+                            <span>PindoramaClinica</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quadrante-formulario">
+                    <div class="input-form">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="input-form">
+                        <label for="lastName">Sobrenome</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div class="input-form">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="input-form">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+
+                    <button type="submit" class="button-form">Enviar</button>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="social-medias">
+        <a href="#">
+            <img src="assets/images/icon-whatsapp.png" alt="">
+        </a>
+        <a href="#">
+            <img src="assets/images/icon-instagram.png" alt="">
+        </a>
+        <a href="#">
+            <img src="assets/images/icon-face.png" alt="">
+        </a>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="links-wrapper">
+                <img src="assets/images/logo.png" alt="" class="desktop-only">
+
+                <div class="">
+                    <span>Nossos serviços</span>
+                    <a href="#">SOBRE NÓS</a>
+                    <a href="#">Consulta veterinária </a>
+                    <a href="#">Nossos serviços</a>
+                </div>
+
+                <div class="">
+                    <span>Institucional</span>
+                    <a href="#">Programa de adoção</a>
+                    <a href="#">TERMOS DE COMPROMISSO</a>
+                    <a href="#">Unect jR</a>
+                </div>
+
+                <div class="desktop-only">
+                    <span>
+                        Nossos contatos
+                    </span>
+
+                    <ul class="">
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon-whatsapp.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon-instagram.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon-face.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="final">UNECT JR - TODOS OS DIREITOS RESERVADOS</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
