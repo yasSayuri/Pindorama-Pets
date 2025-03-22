@@ -1,95 +1,93 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
-    const campanha1 = document.getElementById('campanha1');
-    const campanha2 = document.getElementById('campanha2');
-    const campanha3 = document.getElementById('campanha3'); 
+    const campanhas = [document.getElementById('campanha1'), document.getElementById('campanha2'), document.getElementById('campanha3')];
     const dots = document.querySelectorAll('.dot');
-    let currentCampanha = 1;
-    
-    function showCampanha(campanhaNumber) {
-        campanha1.classList.remove('active');
-        campanha2.classList.remove('active');
-        campanha3.classList.remove('active');
-        
-        if (campanhaNumber === 1) {
-            campanha1.classList.add('active');
-        } else if (campanhaNumber === 2) {
-            campanha2.classList.add('active');
-        } else if (campanhaNumber === 3) {
-            campanha3.classList.add('active');
-        }
-        
-        updateDots(campanhaNumber);
+    let currentCampanha = 0;
+
+    function showCampanha(index) {
+        campanhas.forEach(campanha => campanha.classList.remove('active'));
+        campanhas[index].classList.add('active');
+        updateDots(index);
     }
-    
-    function updateDots(campanhaNumber) {
-        dots.forEach((dot, index) => {
-            dot.classList.remove('active'); 
-            if (index === campanhaNumber - 1) {
-                dot.classList.add('active'); 
+
+    function updateDots(index) {
+        dots.forEach((dot, i) => {
+            dot.classList.remove('active');
+            if (i === index) {
+                dot.classList.add('active');
             }
         });
     }
-    
-    prevBtn.addEventListener('click', function() {
-        if (currentCampanha === 1) {
-            currentCampanha = 3; 
-        } else {
-            currentCampanha--; 
-        }
+
+    prevBtn.addEventListener('click', function () {
+        currentCampanha = (currentCampanha - 1 + campanhas.length) % campanhas.length;
         showCampanha(currentCampanha);
     });
-    
-    nextBtn.addEventListener('click', function() {
-        if (currentCampanha === 3) {
-            currentCampanha = 1; 
-        } else {
-            currentCampanha++; 
-        }
+
+    nextBtn.addEventListener('click', function () {
+        currentCampanha = (currentCampanha + 1) % campanhas.length;
         showCampanha(currentCampanha);
     });
-    
+
     dots.forEach((dot, index) => {
-        dot.addEventListener('click', function() {
-            currentCampanha = index + 1; // Define a campanha atual com base no índice da bolinha
-            showCampanha(currentCampanha); // Exibe a campanha correspondente
+        dot.addEventListener('click', function () {
+            currentCampanha = index;
+            showCampanha(currentCampanha);
         });
     });
-    
-    // Inicializa o carrossel com a primeira campanha visível
+
     showCampanha(currentCampanha);
-    
-    const AvalBtn = document.getElementById('avaliacao-btn');
-    const AvalPAG1 = document.getElementById('AvalPAG1');
-    const AvalPAG2 = document.getElementById('AvalPAG2');
-    const AvalPAG3 = document.getElementById('AvalPAG3');
-    const PAGnum = document.querySelector(".pagina-atual");
-    
-    let currentAvalPAG = 1;
-    let totalPAG = 3;
 
-    function showAvaliacao (AvalPAGINA) {
-        AvalPAG1.classList.remove('active');
-        AvalPAG2.classList.remove('active');
-        AvalPAG3.classList.remove('active');
+    const avaliacaoFooter = document.querySelector('#avaliacao footer'); // Seleciona o footer da seção de avaliações
+    const prevAvalButton = avaliacaoFooter ? avaliacaoFooter.querySelector('.prev') : null; // Botão "Anterior"
+    const nextAvalButton = avaliacaoFooter ? avaliacaoFooter.querySelector('.next') : null; // Botão "Próximo"
+    const pageIndicator = avaliacaoFooter ? avaliacaoFooter.querySelector('#page') : null; // Indicador de página
 
-        if (AvalPAGINA === 1) {
-            AvalPAG1.classList.add('active');
-        }else if (AvalPAGINA === 2) {
-            AvalPAG2.classList.add('active');
-        }else if (AvalPAGINA === 3) {
-            AvalPAG3.classList.add('active');
+    const AvalPAG1 = document.querySelector('.quadrante-avaliacao'); // Página 1
+    const AvalPAG2 = document.querySelector('.quadrante-avaliacao2'); // Página 2
+    const AvalPAG3 = document.querySelector('.quadrante-avaliacao3'); // Página 3
+
+    const avaliacoes = [AvalPAG1, AvalPAG2, AvalPAG3]; // Array com todas as páginas de avaliações
+    let currentAvalPAG = 0; // Página atual (começa na primeira página)
+
+    // Função para mostrar a página de avaliação ativa
+    function showAvaliacao(index) {
+        avaliacoes.forEach(avaliacao => avaliacao.classList.remove('active'));
+        avaliacoes[index].classList.add('active');
+
+        // Atualiza o indicador de página
+        if (pageIndicator) {
+            pageIndicator.textContent = index + 1; // Mostra o número da página (1, 2 ou 3)
         }
-        PAGnum.textContent = AvalPAGINA;
+
+        // Mostra ou oculta os botões de navegação
+        if (prevAvalButton && nextAvalButton) {
+            prevAvalButton.classList.toggle('hidden', index === 0); // Oculta o botão "Anterior" na primeira página
+            nextAvalButton.classList.toggle('hidden', index === avaliacoes.length - 1); // Oculta o botão "Próximo" na última página
+        }
     }
 
-    AvalBtn.addEventListener("click", function(){
-        currentAvalPAG = currentAvalPAG < totalPAG ? currentAvalPAG + 1 : 1;
-        showAvaliacao(currentAvalPAG);
-    })
+    // Evento para o botão "Anterior"
+    if (prevAvalButton) {
+        prevAvalButton.addEventListener('click', () => {
+            if (currentAvalPAG > 0) {
+                currentAvalPAG--;
+                showAvaliacao(currentAvalPAG);
+            }
+        });
+    }
 
+    // Evento para o botão "Próximo"
+    if (nextAvalButton) {
+        nextAvalButton.addEventListener('click', () => {
+            if (currentAvalPAG < avaliacoes.length - 1) {
+                currentAvalPAG++;
+                showAvaliacao(currentAvalPAG);
+            }
+        });
+    }
+
+    // Inicializa o carrossel mostrando a primeira página
     showAvaliacao(currentAvalPAG);
-
 });
-
