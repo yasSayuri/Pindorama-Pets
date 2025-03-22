@@ -1540,3 +1540,69 @@ footer span {
     
     
 }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .container2 {
+        width: 90%;
+    }
+    
+    .desktop-title {
+      font-size: 24px ;
+      margin-bottom: 20px !important;
+      max-width: 500px !important;
+      padding: 15px !important;
+    }
+    
+    .container2 #animals {
+        margin-top: 40px !important;
+        max-width: 50% !important;
+    }
+    
+    .button-contato {
+      margin-top: 20px !important; 
+      z-index: 2 !important; 
+    }
+
+    .campanha-img-esquerda {
+        max-width: 40%;
+    }
+    .hero-campanha-text h2{
+        margin-right: 1%;
+        font-size: 24px;
+    }
+    .hero-campanha-text p{
+        margin-right: 1% !important;
+        font-size: 18px;
+    }
+    .hero-campanha-text button {
+        margin-right: 25%;
+    }
+    .campanha-img-direita {
+        max-width: 12% !important;
+    }
+
+    .container5 .img-desktop {
+        margin-left: 10px;
+    }
+    .container6 p{
+        margin-left: 10px;
+    }
+
+    .links-wrapper {
+        justify-content: space-around;
+        gap: 10px !important;
+    }
+      
+    .links-wrapper > div {
+        min-width: 180px;
+    }
+      
+    .links-wrapper span {
+        font-size: 16px;
+    }
+      
+    .links-wrapper a {
+        font-size: 14px;
+    }
+    
+}
