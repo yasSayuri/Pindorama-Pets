@@ -89,18 +89,17 @@ body {
 }
 
 .close-menu-btn {
-    margin-top: auto;
-    padding: 10px 15px;
-    margin-left: auto;
+    font-size: 18px;
+    margin-top: 0px;
     margin-right: auto;
-    background: #063643;
-    color: white;
+    background: #ffffff;
+    color: #063643;
     border: none;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 12px;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
@@ -110,7 +109,7 @@ body {
 }
 
 .close-menu-btn .material-symbols-outlined {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .mobile-nav ul li a {
