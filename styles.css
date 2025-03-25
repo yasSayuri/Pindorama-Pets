@@ -75,6 +75,8 @@ body {
     z-index: 1000;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile-nav ul {
@@ -86,11 +88,43 @@ body {
     margin-bottom: 15px;
 }
 
+.close-menu-btn {
+    margin-top: auto;
+    padding: 10px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #063643;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.close-menu-btn:hover{
+    background-color:#041d24;
+}
+
+.close-menu-btn .material-symbols-outlined {
+    font-size: 20px;
+}
+
 .mobile-nav ul li a {
     text-decoration: none;
     color: #063643;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.mobile-nav ul li .material-symbols-outlined {
+    font-size: 24px;
+    color: #063643; /* Cor dos ícones */
 }
 
 .mobile-nav ul li a:hover {
@@ -501,6 +535,10 @@ footer span {
     line-height: 1.875rem; /* Altura da linha */
 }
 
+.desktop-only{
+    display: none;
+}
+
 /* Estilos para a seção de contato */
 #EntreContato {
     background-color: #FAFDFF;
@@ -637,12 +675,12 @@ footer span {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-bottom: 20px; /* Permite que a div.final seja posicionada corretamente */
+    padding-bottom: 20px; 
 
     & .container {
-        flex: 1; /* Faz o container crescer para ocupar o espaço disponível */
+        flex: 1; 
     }
-
+    
     & .links-wrapper {
         padding: 1.0625rem 1.25rem 1.75rem;
         display: flex;
@@ -655,7 +693,7 @@ footer span {
             gap: 0.5rem;
 
             &.desktop-only {
-                display: none; /* Esconde a seção "Nossos contatos" no mobile */
+                display: none; 
             }
         }
 
@@ -675,7 +713,7 @@ footer span {
         }
 
         &>img {
-            display: none; /* Esconde a logo no mobile */
+            display: none; 
         }
     }
 
@@ -694,10 +732,10 @@ footer span {
         padding: 0.75rem;
         color: #E2F5FA;
         background-color: #063643;
-        width: 100%; /* Ocupa toda a largura da tela */
-        position: absolute; /* Posiciona a div.final abaixo de todo o conteúdo */
-        bottom: 0; /* Alinha a div.final na parte inferior */
-        left: 0; /* Garante que comece da borda esquerda */
+        width: 100%; 
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
     }
 
     @media(min-width: 768px) {
@@ -709,10 +747,15 @@ footer span {
             padding: 0;
 
             &>img {
-                display: block; /* Mostra a logo no desktop */
+                display: block; 
                 width: 12.5rem;
                 height: 12.5rem;
             }
+
+            .desktop-only{
+                display: block;
+            }
+        
 
             &>div {
                 margin-top: 2.375rem;
@@ -720,7 +763,7 @@ footer span {
                 padding-top: 1rem;
 
                 &.desktop-only {
-                    display: flex; /* Mostra a seção "Nossos contatos" no desktop */
+                    display: flex; 
                     gap: 0.75rem;
 
                     & ul {

@@ -91,3 +91,33 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inicializa o carrossel mostrando a primeira página
     showAvaliacao(currentAvalPAG);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menu');
+    const mobileNav = document.getElementById('mobile-nav');
+    const closeBtn = document.querySelector('.close-menu-btn');
+
+    // Abrir menu
+    menuBtn.addEventListener('click', function() {
+        mobileNav.classList.remove('hidden');
+        mobileNav.classList.add('active');
+        document.body.classList.add('overflow-hidden');
+    });
+
+    // Fechar menu
+    closeBtn.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+        mobileNav.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+    });
+
+    // Fechar ao clicar em um link
+    const navLinks = mobileNav.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+            mobileNav.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        });
+    });
+});

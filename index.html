@@ -29,11 +29,14 @@
             </div>
             <nav class="mobile-nav hidden" id="mobile-nav">
                 <ul>
-                    <li><a href="#hero">Início</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#QuemSomos">Sobre nós</a></li>
-                    <li><a href="#EntreContato">Contato</a></li>
+                    <li><a href="#hero"><span class="material-symbols-outlined">home</span> Início</a></li>
+                    <li><a href="#servicos"><span class="material-symbols-outlined">pets</span> Serviços</a></li>
+                    <li><a href="#QuemSomos"><span class="material-symbols-outlined">info</span> Sobre nós</a></li>
+                    <li><a href="#EntreContato"><span class="material-symbols-outlined">chat</span> Contato</a></li>
                 </ul>
+                <button class="close-menu-btn">
+                    <span class="material-symbols-outlined">close</span> Fechar
+                </button>
             </nav>
             <nav class="desktop-nav">
                 <ul>
@@ -136,7 +139,7 @@
             <img src="assets/images/servicos.png" class="img-desktop" alt="medica">
             <p>Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. <span class="desktop-resto">Contamos com uma equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes.</span></p>
         </div>
-        <button class="button-mobile-servicos">Agende uma consulta</button>
+        <button class="button-mobile-servicos" onclick="location.href='#EntreContato'">Agende uma consulta</button>
         <img src="assets/images/cortado.png" alt="Gato" class="mobile-img">
     </section>
 
@@ -292,7 +295,7 @@
 
                     <ul>
                         <li>
-                            <a href="">
+                            <a>
                                 <img src="assets/images/icon-whatsapp.png" alt="whatsapp">
                             </a>
                             <span>(99) 99999-9999</span>
